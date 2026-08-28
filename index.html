@@ -19,7 +19,7 @@
         <!-- Links on the same row -->
         <ul class="navbar-nav d-flex flex-row">
             <li class="nav-item">
-                <a class="nav-link" href="https://www.shecodes.io/workshops">Mini Demos</a>
+                <a class="nav-link" href="#minidemo" onclick="window.location.href='minidemo.html'">Mini Demos</a>
             </li>
 
             <li class="nav-item">
@@ -28,7 +28,8 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="https://www.shecodes.io/students">Certificates</a>
+                <a class="nav-link" href="javascript:void(0)"
+                    onclick="window.location.href='certificates.html'">Certificates</a>
             </li>
 
             <li class="nav-item">
@@ -43,13 +44,11 @@
         <h1>Welcome to my Portfolio👩🏽‍💻.</h1>
         <p>Full-Stack Junior Developer, based in South London.</p>
     </div>
-    <button onclick="window.location.href='skills.html#contact'" id="contact">
+    <button class="contact" onclick="window.location.href='skills.html#contact'" id="contact">
         contact
     </button>
 
-    <button onclick="window.location.href='skills.html'" id="myskills">
-        about me
-    </button>
+
     <!-- Bootstrap 4 JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>

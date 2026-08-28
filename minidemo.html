@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<!-- WEATHER APP MODAL -->
+<div class="modal fade" id="weatherModal" tabindex="-1" role="dialog" aria-labelledby="weatherModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="weatherModalLabel">Soreil Weather Forecast — Live Demo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body p-0">
+                <iframe src="https://soreilforecast.netlify.app/" width="100%" height="600px" style="border:0;"
+                    loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<body class="background" style="background-color: #f2f5f7">
+    <nav class="navbar navbar-light" style="background-color: #cce7ff">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#hero" onclick="window.location.href='index.html'">Tracey-Marie💗</a>
+
+        <!-- Links on the same row -->
+        <ul class="navbar-nav d-flex flex-row">
+            <li class="nav-item">
+                <a class="nav-link" href="#minidemo" onclick="window.location.href='minidemo.html'">Mini Demos</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)" onclick="window.location.href='skills.html'"
+                    id="myskills">Skills</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)"
+                    onclick="window.location.href='certificates.html'">Certificates</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- MINI DEMOS SECTION -->
+    <section id="mini-demos" class="mb-5">
+        <h2 class="h4 mb-4">Mini Demos</h2>
+        <p class="text-muted">A collection of interactive projects built using HTML, CSS, JavaScript, APIs, and
+            responsive
+            design.</p>
+
+        <div class="row">
+
+            <!-- WEATHER APP -->
+            <article class="col-12 col-md-6 col-lg-4 mb-4" data-tech="html css javascript apis responsive bootstrap">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/soreil-weather.webp" class="card-img-top" alt="Soreil Weather App Screenshot"
+                        loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Soreil Weather Forecast</h5>
+                        <p class="card-text">
+                            A responsive weather app that lets you search any city worldwide and view real-time weather
+                            data
+                            using API integration.
+                        </p>
+
+                        <ul class="small text-muted mb-3">
+                            <li>🌍 Global city search</li>
+                            <li>⛅ Live API data</li>
+                            <li>📱 Fully responsive</li>
+                            <li>🎨 Custom UI design</li>
+                        </ul>
+
+                        <div class="mt-auto">
+                            <button class="btn btn-primary btn-sm mr-2" data-toggle="modal" data-target="#weatherModal">
+                                Try Demo
+                            </button>
+                            <a href="https://soreilforecast.netlify.app/" class="btn btn-outline-secondary btn-sm"
+                                target="_blank">
+                                Live Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- POEM GENERATOR -->
+            <article class="col-12 col-md-6 col-lg-4 mb-4" data-tech="html css javascript apis responsive">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/poem-demo.webp" class="card-img-top" alt="Poem Generator Screenshot"
+                        loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">AI Poem Generator</h5>
+                        <p class="card-text">Generate creative poems using JavaScript logic and AI prompts.</p>
+
+                        <ul class="small text-muted mb-3">
+                            <li>✨ Mood-based poem creation</li>
+                            <li>⚡ Instant generation</li>
+                            <li>📱 Responsive layout</li>
+                        </ul>
+
+                        <div class="mt-auto">
+                            <a href="poem.html" class="btn btn-primary btn-sm mr-2" target="_blank">Try Demo</a>
+                            <a href="https://github.com/yourusername/poem-generator"
+                                class="btn btn-outline-secondary btn-sm" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- QUOTE GENERATOR -->
+            <article class="col-12 col-md-6 col-lg-4 mb-4" data-tech="html css javascript responsive">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/quote-demo.webp" class="card-img-top" alt="Quote Generator Screenshot"
+                        loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Random Quote Generator</h5>
+                        <p class="card-text">Click to generate inspirational quotes with smooth animations.</p>
+
+                        <ul class="small text-muted mb-3">
+                            <li>💬 Random quotes</li>
+                            <li>🎞️ Smooth transitions</li>
+                            <li>📱 Fully responsive</li>
+                        </ul>
+
+                        <div class="mt-auto">
+                            <a href="quote.html" class="btn btn-primary btn-sm mr-2" target="_blank">Try Demo</a>
+                            <a href="https://github.com/yourusername/quote-generator"
+                                class="btn btn-outline-secondary btn-sm" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>

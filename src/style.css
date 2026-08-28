@@ -6,7 +6,7 @@
   --margin: 0, 50, 0, 50px;
   --font-main:
     "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* font-family variable */
-  --font-size: 18px; /* font-size variable */
+  --font-size: 16px; /* font-size variable */
 }
 
 body {
@@ -39,6 +39,7 @@ h3 {
   font-size: 28px;
   margin-bottom: 10px;
   text-align: center;
+  margin-top: 20px;
 }
 .container {
   max-width: 800px;
@@ -48,6 +49,21 @@ h3 {
   border-radius: var(--radius);
   box-shadow: var(--button-shadow);
   padding-bottom: 500px;
+}
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
+}
+
+.skills-grid p {
+  font-weight: 600;
+  margin: 0;
 }
 
 h1 {

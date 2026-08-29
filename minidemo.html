@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-
     <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
 
 </head>
 <!-- WEATHER APP MODAL -->
@@ -35,31 +35,38 @@
 </div>
 
 <body class="background" style="background-color: #f2f5f7">
-    <nav class="navbar navbar-light" style="background-color: #cce7ff">
-        <!-- Logo -->
-        <a class="navbar-brand" href="#hero" onclick="window.location.href='index.html'">Tracey-Marie💗</a>
-
-        <!-- Links on the same row -->
-        <ul class="navbar-nav d-flex flex-row">
+    <!-- Collapsed Navbar Content -->
+    <div class="collapse bg-dark p-4" id="navbarToggleExternalContent" data-bs-theme="dark">
+        <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#minidemo" onclick="window.location.href='minidemo.html'">Mini Demos</a>
+                <a class="nav-link text-white" href="minidemo.html">Mini Demos</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)" onclick="window.location.href='skills.html'"
-                    id="myskills">Skills</a>
+                <a class="nav-link text-white" href="skills.html">Skills</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)"
-                    onclick="window.location.href='certificates.html'">Certificates</a>
+                <a class="nav-link text-white" href="certificates.html">Certificates</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link disabled text-muted" aria-disabled="true">Disabled</a>
             </li>
         </ul>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
     </nav>
+
     <!-- MINI DEMOS SECTION -->
     <section id="mini-demos" class="mb-5">
         <h2 class="h4 mb-4">Mini Demos</h2>
@@ -152,3 +159,8 @@
 
         </div>
     </section>
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

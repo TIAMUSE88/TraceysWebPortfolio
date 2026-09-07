@@ -127,7 +127,9 @@ p {
 }
 
 .Tracey-Marie {
-  max-width: 500px;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 40px;
 }
 
 button {
